@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!-- responsive meta tag for mobile  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./ast/style.css">
+  <!-- title -->
+  <title>Quiz game</title>
+</head>
+
+<body>
+  <!-- container because it keeps it centered -->
+  <div class="score"><a href="highscores.html">View highest scores </a></div>
+  <div class="timer"> Time: <span id="timer">0</span></div>
+  <div id="startscreen" class="start">
+    <h1>ALL ABOUT HTML5</h1>
+
+    <button id="start">start Quiz</button>
+  </div>
+  <div id="questions" class="hide">
+
+    <h2 id="questionTitle"></h2>
+    <div id="Multiplechoice" class="choices"></div>
+  </div>
+  <div id="endscreen" class="hide">
+
+    <p>Your score is <span id="final-score"></span>.</p>
+    <p>
+      Enter your initials <input type="text" id="initial" max="3" />
+      <!-- button to save the score -->
+      <button id="submit">Bye</button>
+    </p>
+  </div>
+
+  <div id="feedback" class="feedback hide"></div>
+
+  <script src="js/questionlist.js"></script>
+  <script src='js/script.js'></script>
+
+</body>
+
+</html>
